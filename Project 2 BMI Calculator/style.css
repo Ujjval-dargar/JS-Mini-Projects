@@ -1,0 +1,142 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    width: 60%;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+    margin-top: 30px;
+
+    border: solid 2px #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    background-color: #f9f9f9;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container .header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.container .header h1 {
+    color: #333;
+    font-size: 2.5rem;
+}
+
+.container .header p {
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.input label {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.input input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+
+#calculate-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#calculate-btn:hover {
+    background-color: #218838;
+}
+
+#calculate-btn:active {
+    background-color: #1e7e34;
+}
+
+.result-container {
+    margin-top: 15px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #e9ecef;
+}
+
+.result-container h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.error-msg {
+    display: none;
+    color: red;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.footer {
+    margin-top: 15px;
+    border: solid 1px #ccc;
+    padding: 20px;
+    width: 80%;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer p {
+    color: #666;
+    font-size: 1rem;
+}
+
+.footer h2 {
+    color: #333;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    .input input {
+        width: 100%;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+}

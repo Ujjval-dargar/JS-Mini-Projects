@@ -1,0 +1,149 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    width: 40%;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+    margin-top: 30px;
+
+    border: solid 2px #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    background-color: #f9f9f9;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.container h1 {
+    color: #333;
+    font-size: 2.5rem;
+}
+
+.container p {
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.container input {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    width: 60%;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.guess-left {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+#submitGuess {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submitGuess:hover {
+    background-color: #218838;
+}
+
+#submitGuess:active {
+    background-color: #1e7e34;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#result-msg {
+    font-size: 1.5rem;
+}
+
+
+.prev-guess {
+    width: 100%;
+    text-align: left;
+
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.prev-guess ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5px;
+    list-style-type: none;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.prev-guess li {
+    background-color: #e9ecef;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#resetGame {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#resetGame:hover {
+    background-color: #0056b3;
+}
+
+#resetGame:active {
+    background-color: #004085;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .container h1 {
+        font-size: 2rem;
+    }
+
+    .container p {
+        font-size: 1.1rem;
+    }
+
+    .container input {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+    #submitGuess, #resetGame {
+        width: 100%;
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+}

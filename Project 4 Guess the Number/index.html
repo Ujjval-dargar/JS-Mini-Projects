@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number (@UD)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../assets/tag-name-image.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="nav-bar">
+        <h1 class="nav-title">JS Mini Projects</h1>
+        <a href="../index.html" class="nav-home-btn">Home</a>
+    </div>
+
+    <div class="container">
+        <h1>Guess the Number</h1>
+        <p>Try to guess the number from 1 to 100!</p>
+
+        <input type="number" id="guessInput" placeholder="Enter your guess">
+        <button id="submitGuess">Submit Guess</button>
+        <div class="guess-left">Guesses Left : 10</div>
+
+        <p id="result-msg"></p>
+        <div class="prev-guess">
+            <h2>Previous Guesses:</h2>
+            <ul id="guessList">
+            </ul>
+        </div>
+        <button id="resetGame">Reset Game</button>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
