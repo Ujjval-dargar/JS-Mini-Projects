@@ -24,7 +24,8 @@ calculate_btn.addEventListener("click", function() {
         result.style.color = "blue";
     } else if (bmi >= 18.5 && bmi < 24.9) {
         result.style.color = "green";
-    } else if (bmi >= 25 && bmi < 29.9) {
+    } else if (bmi >= 25) {
         result.style.color = "red";
     }
+
 })
