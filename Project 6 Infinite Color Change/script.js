@@ -15,6 +15,8 @@ start.addEventListener("click",
                 }
             , 500
         );
+        start.disabled = true;
+        stop.disabled = false;
     }
 );
 
@@ -22,5 +24,7 @@ stop.addEventListener("click",
     () => 
     {
         clearInterval(intervalId);
+        start.disabled = false;
+        stop.disabled = true;
     }
 );
